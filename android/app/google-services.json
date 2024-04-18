@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71018391315",
+    "project_id": "flash-chat-38ad2",
+    "storage_bucket": "flash-chat-38ad2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71018391315:android:539a2c15f43930f4285ce6",
+        "android_client_info": {
+          "package_name": "com.example.clima"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO0mhVHNZxFvLah8uIsIM6brUNIPTLCTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
