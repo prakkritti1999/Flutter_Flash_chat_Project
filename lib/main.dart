@@ -7,10 +7,14 @@ import 'package:flash_chat/screens/chat_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(FlashChat());
+  try{
+    await Firebase.initializeApp();
+    runApp(FlashChat());
+  }
+  catch(e){
+    print("Error occurred: $e");
+  }
 }
-
 class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,8 +25,8 @@ class FlashChat extends StatelessWidget {
           bodyLarge: TextStyle(color: Colors.black54),
         ),
       ),
-      home: WelcomeScreen(),
-      //initialRoute: 'welcome_screen',
+      //home: WelcomeScreen(),
+      initialRoute: 'welcome_screen',
       routes: {
         'welcome_screen': (context) => WelcomeScreen(),
         'login_screen'  : (context) => LoginScreen(),
